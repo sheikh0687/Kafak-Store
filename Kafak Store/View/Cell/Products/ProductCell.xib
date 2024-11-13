@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="gTV-IL-0wX" customClass="ProductCell" customModule="Kafak_Store" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcN-Qp-zQu">
+                        <rect key="frame" x="6" y="6" width="138" height="178"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Xy-aF-wn9">
+                                <rect key="frame" x="0.0" y="0.0" width="138" height="170"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="pipe" translatesAutoresizingMaskIntoConstraints="NO" id="BrN-KA-Dls">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="142"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pvc Pipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgP-BA-EyL">
+                                        <rect key="frame" x="40.333333333333343" y="152" width="57.666666666666657" height="18"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BrN-KA-Dls" firstAttribute="top" secondItem="6Xy-aF-wn9" secondAttribute="top" id="5Pd-Lq-YDB"/>
+                                    <constraint firstItem="BrN-KA-Dls" firstAttribute="leading" secondItem="6Xy-aF-wn9" secondAttribute="leading" id="8ru-5E-M9z"/>
+                                    <constraint firstAttribute="trailing" secondItem="BrN-KA-Dls" secondAttribute="trailing" id="GTW-9b-VJ0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6Xy-aF-wn9" secondAttribute="bottom" constant="8" id="Cr9-ZQ-Ux6"/>
+                            <constraint firstItem="6Xy-aF-wn9" firstAttribute="top" secondItem="xcN-Qp-zQu" secondAttribute="top" id="bkI-C6-MYb"/>
+                            <constraint firstAttribute="trailing" secondItem="6Xy-aF-wn9" secondAttribute="trailing" id="dru-fN-OEe"/>
+                            <constraint firstItem="6Xy-aF-wn9" firstAttribute="leading" secondItem="xcN-Qp-zQu" secondAttribute="leading" id="lyQ-Ed-5dF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="0.4492672748" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xcN-Qp-zQu" secondAttribute="bottom" constant="6" id="3ZH-GX-Upt"/>
+                <constraint firstAttribute="trailing" secondItem="xcN-Qp-zQu" secondAttribute="trailing" constant="6" id="Bv6-SG-fVh"/>
+                <constraint firstItem="xcN-Qp-zQu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="KdX-gE-Dd0"/>
+                <constraint firstItem="xcN-Qp-zQu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="STv-7w-SgV"/>
+            </constraints>
+            <size key="customSize" width="150" height="166"/>
+            <connections>
+                <outlet property="img" destination="BrN-KA-Dls" id="4x4-on-3h5"/>
+                <outlet property="lbl_Name" destination="GgP-BA-EyL" id="tue-o9-ibS"/>
+            </connections>
+            <point key="canvasLocation" x="212.21374045801525" y="28.87323943661972"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pipe" width="245" height="198"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
